@@ -1,4 +1,3 @@
-var util = require('util');
 var fs = require('fs');
 
 function prompt(question, callback) {
