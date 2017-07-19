@@ -1,4 +1,6 @@
 var fs = require('fs');
+const VersionMajor = 1;
+const VersionMinor = 1;
 
 function prompt(question, callback) {
     var stdin = process.stdin,
@@ -24,6 +26,8 @@ var css = new String();
 
 css = "//META{\"name\":\"";
 
+console.log("Themer.js v" + VersionMajor + "." + VersionMinor);
+
 prompt('Enter the theme name: ', function(input){
   name = input;
   css += input;
@@ -37,50 +41,54 @@ prompt('Enter the theme name: ', function(input){
     bg = input;
     css +=".app,\r\n\
 .callout-backdrop {\r\n\
-  background-image: url(\"" + bg + "\");\r\n\
-  background-size: cover !important;\r\n\
-  background-position: center !important;\r\n\
+    background-image: url(\"" + bg + "\");\r\n\
+    background-size: cover !important;\r\n\
+    background-position: center !important;\r\n\
 }\r\n\
 .bda-backdrop {\r\n\
-  background: url(\"" + bg + "\");\r\n\
-  background-size: cover!important;\r\n\
+    background: url(\"" + bg + "\");\r\n\
+    background-size: cover!important;\r\n\
 }\r\n\
 #pubs-container:before {\r\n\
-  background: url(\"" + bg + "\")!important;\r\n\
-  background-size: cover!important;\r\n\
+	background: url(\"" + bg + "\")!important;\r\n\
+    background-size: cover!important;\r\n\
 }\r\n\
 .layers,\r\n\
 .layer,\r\n\
 .search-header {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
+\r\n\
 .chat .new-messages-bar {\r\n\
-  background-color: transparent !important;\r\n\
-  opacity: 0.8;\r\n\
+    background-color: transparent !important;\r\n\
+    opacity: 0.8;\r\n\
 }\r\n\
 .chat>.content .messages .message-group .markup pre {\r\n\
-  background: transparent; !important;\r\n\
-  border-color: rgba(0, 0, 0, 0.46) !important;\r\n\
+    background: transparent; !important;\r\n\
+    border-color: rgba(0, 0, 0, 0.46) !important;\r\n\
 }\r\n\
 .message-group .comment .markup code.inline {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .message-group .comment .markup pre {\r\n\
-  background: transparent;\r\n\
-}\r\n\
+    background: transparent;\r\n\
+ }\r\n\
 .message-group .comment .markup pre code {\r\n\
-  background: transparent;\r\n\
-}\r\n\
+    background: transparent;\r\n\
+ }\r\n\
 .theme-dark .messages-wrapper .messages .message-group-blocked {\r\n\
-  background: transparent;\r\n\
-  border-color: transparent;\r\n\
+    background: transparent;\r\n\
+    border-color: transparent;\r\n\
 }\r\n\
 .ui-flex.flex-horizontal>.ui-flex:last-child {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
+\r\n\
 .search-popout .option.selected:after {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
+\r\n\
+/*THIS IS REALLY FUCKING IMPORTANT */\r\n\
 .links,\r\n\
 .chat,\r\n\
 .typing,\r\n\
@@ -90,206 +98,210 @@ prompt('Enter the theme name: ', function(input){
 .divider-red span,\r\n\
 .messages-wrapper,\r\n\
 #rtc-connection {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
+\r\n\
 .container-RYiLUQ  {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
 .account {\r\n\
-  background: rgba(0, 0, 0, 0);\r\n\
+    background: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
+\r\n\
 #rtc-connection .btn {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 #rtc-connection .btn:active {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
+\r\n\
 #user-profile-modal .avatar-wrapper {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 #user-profile-modal .header:after {\r\n\
-  background-color: transparent;\r\n\
-  background-image: none;\r\n\
+    background-color: transparent;\r\n\
+    background-image: none;\r\n\
 }\r\n\
 .emoji-picker .sticky-header {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .bda-dark .emoji-picker .header .search-bar {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .instant-invite-modal {\r\n\
-  background: transparent;\r\n\
+	background: transparent;\r\n\
 }\r\n\
 .add-friend-popout {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .user-popout .avatar-wrapper .avatar-popout {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .theme-dark.context-menu .item.danger {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .context-menu .item.danger {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .guild-settings-modal-members {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .clipboard-input-inner{\r\n\
-  background:transparent;\r\n\
+    background:transparent;\r\n\
 }\r\n\
 .create-guild-container {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .theme-dark .ui-standard-sidebar-view .content-region {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .form .control-group .Select-control {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .user-settings-modal .settings-wrapper,\r\n\
 .user-settings-modal .voice-settings.element {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .user-settings-modal .voice-settings {\r\n\
-  background: transparent  !important;\r\n\
+    background: transparent  !important;\r\n\
 }\r\n\
 .form .form-actions {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
+\r\n\
 #friends {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
 .theme-dark .chat>.content .messages .divider:not(.red) div {\r\n\
-  background: transparent;\r\n\
+    background: transparent;\r\n\
 }\r\n\
 .channel-notification-settings .content .content-inner {\r\n\
-  background: transparent !important;\r\n\
+    background: transparent !important;\r\n\
 }\r\n\
 .theme-dark.context-menu .item.disabled {\r\n\
-  background-color: rgba(0, 0, 0, 0);\r\n\
+    background-color: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
 .search-bar.search-bar-light {\r\n\
-  background-color: rgba(0, 0, 0, 0);\r\n\
-  box-shadow: none;\r\n\
+    background-color: rgba(0, 0, 0, 0);\r\n\
+    box-shadow: none;\r\n\
 }\r\n\
 .region-select {\r\n\
-  background-color: rgba(0, 0, 0, 0);\r\n\
+    background-color: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
 .user-popout .body .notes textarea:focus {\r\n\
-  background: rgba(0, 0, 0, 0);\r\n\
+    background: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
 .bd-settings > div:last-child {\r\n\
-  background: rgba(0, 0, 0, 0) !important;\r\n\
-  height: 30px !important;\r\n\
-  position: absolute !important;\r\n\
-  bottom: 0px !important;\r\n\
-  left: 0px !important;\r\n\
-  right: 0 !important;\r\n\
+    background: rgba(0, 0, 0, 0) !important;\r\n\
+    height: 30px !important;\r\n\
+    position: absolute !important;\r\n\
+    bottom: 0px !important;\r\n\
+    left: 0px !important;\r\n\
+    right: 0 !important;\r\n\
 }\r\n\
 .guilds-wrapper {\r\n\
-  box-shadow: inset -10px 0px 5px -6px rgba(0, 0, 0, 0.5);\r\n\
-  background: rgba(0, 0, 0, 0.5);\r\n\
-  border-right: 1px solid rgba(0, 0, 0, 0.4);\r\n\
+    box-shadow: inset -10px 0px 5px -6px rgba(0, 0, 0, 0.5);\r\n\
+    background: rgba(0, 0, 0, 0.5);\r\n\
+    border-right: 1px solid rgba(0, 0, 0, 0.4);\r\n\
 }\r\n\
 \r\n\
 .account {\r\n\
-  background: rgba(0, 0, 0, 0);\r\n\
+    background: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
 .channel-textarea-autocomplete-inner {\r\n\
-  background:rgba(0,0,0,0.6)!important;\r\n\
-  border:none !important;\r\n\
+    background:rgba(0,0,0,0.6)!important;\r\n\
+    border:none !important;\r\n\
 }\r\n\
 .channel.channel-textarea-autocomplete-inner:after {\r\n\
-  display:none;\r\n\
+    display:none;\r\n\
 }\r\n\
 .channel-textarea-autocomplete-inner header {\r\n\
-  background:rgba(0,0,0,0.6)!important;\r\n\
-  border-radius:5px 5px 0 0;\r\n\
-  border:none !important;\r\n\
+    background:rgba(0,0,0,0.6)!important;\r\n\
+    border-radius:5px 5px 0 0;\r\n\
+    border:none !important;\r\n\
 }\r\n\
 .channels-wrap {\r\n\
-  background: rgba(0, 0, 0, 0.6);\r\n\
-  box-shadow: inset -10px 0px 20px -10px rgba(25, 0, 0, 0.5);\r\n\
+    background: rgba(0, 0, 0, 0.6);\r\n\
+    box-shadow: inset -10px 0px 20px -10px rgba(25, 0, 0, 0.5);\r\n\
 }\r\n\
 .theme-dark .channel-pins-wrap {\r\n\
-  background-color: rgba(0, 0, 0, 0.79);\r\n\
-  box-shadow: none;\r\n\
+    background-color: rgba(0, 0, 0, 0.79);\r\n\
+    box-shadow: none;\r\n\
 }\r\n\
 .theme-dark .channel-pins-wrap .header {\r\n\
-  box-shadow: none;\r\n\
+    box-shadow: none;\r\n\
 }\r\n\
 .settings-connections-wrapper .authed-app {\r\n\
-  background: rgba(0, 0, 0, 0.6);\r\n\
+    background: rgba(0, 0, 0, 0.6);\r\n\
 }\r\n\
 .guilds-wrapper .guilds .friends-online {\r\n\
-  font-size: 10px;\r\n\
-  color: hsla(0, 0%, 100%, 0.82);\r\n\
-  width: 51px;\r\n\
+    font-size: 10px;\r\n\
+    color: hsla(0, 0%, 100%, 0.82);\r\n\
+    width: 51px;\r\n\
 }\r\n\
 .theme-dark .messages-wrapper .messages .message-group .comment .markup .highlight:hover {\r\n\
-  background-color: rgba(0, 0, 0, 0);\r\n\
+    background-color: rgba(0, 0, 0, 0);\r\n\
 }\r\n\
 .chat>.content .messages .message-group h2 .user-name {\r\n\
-  color: rgba(255, 255, 255, 0.8);\r\n\
+    color: rgba(255, 255, 255, 0.8);\r\n\
 }\r\n\
 \r\n\
 \r\n\
 \r\n\
 .create-guild-container .create-or-join .actions .or {\r\n\
-  display: none;\r\n\
+    display: none;\r\n\
 }\r\n\
 .create-guild-container {\r\n\
-  background-color: transparent;\r\n\
+    background-color: transparent;\r\n\
 }\r\n\
 .channel-members {\r\n\
-  background: rgba(0, 0, 0, 0.4) !important;\r\n\
+    background: rgba(0, 0, 0, 0.4) !important;\r\n\
 }\r\n\
 \r\n\
 /* Scroller Settings */\r\n\
 .scroller-wrap .scroller {\r\n\
-  overflow-y: auto !important;\r\n\
+    overflow-y: auto !important;\r\n\
 }\r\n\
 .scroller-wrap .scroller::-webkit-scrollbar-thumb,\r\n\
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {    border: 3px solid rgba(49, 49, 49, 0) !important;\r\n\
 }\r\n\
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {\r\n\
-  border: 3px solid rgba(255, 255, 255, 0) !important;\r\n\
-  background-color: rgba(0, 0, 0, 0.3) !important;\r\n\
+    border: 3px solid rgba(255, 255, 255, 0) !important;\r\n\
+    background-color: rgba(0, 0, 0, 0.3) !important;\r\n\
 }\r\n\
 \r\n\
 .is-open.is-focused .Select-menu::-webkit-scrollbar,\r\n\
 .is-open.is-focused .Select-menu::-webkit-scrollbar-track-piece{\r\n\
-  background: rgba(0, 0, 0, 0.3);\r\n\
-  width: 8px;\r\n\
+    background: rgba(0, 0, 0, 0.3);\r\n\
+    width: 8px;\r\n\
 }\r\n\
 .is-open.is-focused .Select-menu::-webkit-scrollbar-thumb {\r\n\
-  border-radius: 10px;\r\n\
+    border-radius: 10px;\r\n\
 }\r\n\
 .CodeMirror > ::-webkit-scrollbar-thumb {\r\n\
-  border-radius: 6px;\r\n\
+    border-radius: 6px;\r\n\
 }\r\n\
 .CodeMirror > ::-webkit-scrollbar-track-piece {\r\n\
-  border-radius: 6px;\r\n\
+    border-radius: 6px;\r\n\
 }\r\n\
 .CodeMirror-hscrollbar::-webkit-scrollbar-thumb,\r\n\
 .CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {\r\n\
-  border: 3px solid rgba(49 49 49, 0) !important;\r\n\
-  border-radius: 6px;\r\n\
+    border: 3px solid rgba(49 49 49, 0) !important;\r\n\
+    border-radius: 6px;\r\n\
 }\r\n\
 .CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {\r\n\
-  border: 3px solid rgba(255, 255, 255, 0) !important;\r\n\
-  background-color: rgba(0, 0, 0, 0.3) !important;\r\n\
+    border: 3px solid rgba(255, 255, 255, 0) !important;\r\n\
+    background-color: rgba(0, 0, 0, 0.3) !important;\r\n\
 }\r\n\
 .user-popout .body .roles .member-roles::-webkit-scrollbar,\r\n\
 .user-popout .body .roles .member-roles::-webkit-scrollbar-track,\r\n\
 .user-popout .body .roles .member-roles::-webkit-scrollbar-track-piece {\r\n\
-  background-color: rgba(15, 17, 19, 0.6) !important;\r\n\
-  border-color: rgba(15, 17, 19, 0.6) !important;\r\n\
-  width: 8px;\r\n\
+    background-color: rgba(15, 17, 19, 0.6) !important;\r\n\
+    border-color: rgba(15, 17, 19, 0.6) !important;\r\n\
+    width: 8px;\r\n\
 }\r\n\
 .user-popout .body .roles .member-roles::-webkit-scrollbar-thumb {\r\n\
-  border-radius: 6px;\r\n\
+    border-radius: 6px;\r\n\
 }\r\n\
 "
             fs.writeFileSync('./'+name+'.theme.css', css, 'utf-8');
