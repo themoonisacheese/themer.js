@@ -1,6 +1,6 @@
 var fs = require('fs');
 const VersionMajor = 1;
-const VersionMinor = 1;
+const VersionMinor = 2;
 
 function prompt(question, callback) {
     var stdin = process.stdin,
@@ -39,6 +39,9 @@ prompt('Enter the theme name: ', function(input){
 
   prompt('Copy-Paste the URL to your background image (must be a direct link): ', function(input){
     bg = input;
+    if(bg.charAt(4)===':'){//the link needs to be https or discord won't load it
+            bg = 'https'.concat(bg.slice(4));
+    }
     css +=".app,\r\n\
 .callout-backdrop {\r\n\
     background-image: url(\"" + bg + "\");\r\n\
