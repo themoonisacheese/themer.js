@@ -2,7 +2,7 @@ This is themer.js, a tool for generating custom themes for discord.
 
 If installing a bunch of stuff is not your forte, a WebApp version
 is available at https://themoonisacheese.github.io/themer.js/webapp/
-
+Tutorial: https://youtu.be/C46QLHL5UAQ
 
 
 
