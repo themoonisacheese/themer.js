@@ -13,7 +13,7 @@
   <script>
     function submit(){
       const VersionMajor = '1';
-      const VersionMinor = '4';
+      const VersionMinor = '6';
 
       var name = String(document.getElementById('name').value);;
       var bg = String(document.getElementById('BGurl').value);
@@ -23,25 +23,25 @@
 
 
 
-      var css = "//META{\"name\":\"" + name + "\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//\r\n\
+      var css = "//META{\"name\":\""+ name +"\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//\r\n\
 \r\n\
 {}\r\n\
-@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css); /* thanks @GimoTheBeast <3*/\n\
-/* Backgrounds */\n\
+@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css); /* thanks @GimoTheBeast <3*/\r\n\
+/* Backgrounds */\r\n\
 .app,\r\n\
 .callout-backdrop {\r\n\
-	background-image: url(\"" + bg + "\");\r\n\
+	background-image: url(\""+bg+"\");\r\n\
 	background-size: cover !important;\r\n\
 	background-position: center !important;\r\n\
 }\r\n\
 \r\n\
 .bda-backdrop {\r\n\
-	background: url(\"" + bg + "\");\r\n\
+	background: url(\""+bg+"\");\r\n\
 	background-size: cover!important;\r\n\
 }\r\n\
 \r\n\
 #pubs-container:before {\r\n\
-	background: url(\"" + bg + "\")!important;\r\n\
+	background: url(\""+bg+"\")!important;\r\n\
 	background-size: cover!important;\r\n\
 }\r\n\
 \r\n\
@@ -294,8 +294,8 @@
 	background-color: transparent;\r\n\
 }\r\n\
 \r\n\
-.channel-members {\r\n\
-	background: rgba(0, 0, 0, 0.25) !important;\r\n\
+.channel-members, .channel-members-wrap>div{\r\n\
+	background: rgba(0, 0, 0, 0.1) !important;\r\n\
 }\r\n\
 \r\n\
 \r\n\
@@ -384,13 +384,13 @@
 }\r\n\
 \r\n\
 .friends-header {\r\n\
-	background: rgba(0, 0, 0, 0.61) !important;\r\n\
+	background: rgba(0, 0, 0, 0.3) !important;\r\n\
 }\r\n\
 \r\n\
 .friends-table {\r\n\
-	background: rgba(0, 0, 0, 0.53) !important;\r\n\
+	background: rgba(0, 0, 0, 0.3) !important;\r\n\
 	margin-top: 0 !important;\r\n\
-	box-shadow: inset 10px 10px 5px -6px rgba(0, 0, 0, 0.5);\r\n\
+	box-shadow: inset 5px 5px 2px -3px rgba(0, 0, 0, 0.5);\r\n\
 }\r\n\
 \r\n\
 .friends-table .friends-table-body {\r\n\
@@ -414,15 +414,11 @@
 }\r\n\
 \r\n\
 .title-wrap-dark {\r\n\
-	background: transparent !important;\r\n\
+	background: rgba(0, 0, 0, 0.2) !important;\r\n\
 }\r\n\
 \r\n\
 \r\n\
 /* Date 1px line */\r\n\
-\r\n\
-.chat .divider:not(.divider-red)>div {\r\n\
-	background: rgba(255, 0, 255, 0.2) !important;\r\n\
-}\r\n\
 \r\n\
 .chat .divider>span {\r\n\
 	background: rgba(255, 255, 255, 0.1) !important;\r\n\
@@ -448,7 +444,23 @@
 .chat .divider>div {\r\n\
 	display: none;\r\n\
 }\r\n\
+.search-bar-inner{\r\n\
+	background: rgba(0, 0, 0, 0.5) !important;\r\n\
+}\r\n\
+\r\n\
+/*ID: text channels names*/\r\n\
+.nameDefaultText-QoumjC{\r\n\
+	color: #C0C0C0;\r\n\
+	opacity: 1;\r\n\
+}\r\n\
+.nameMutedText-1YDcP-{\r\n\
+	color: #707070;\r\n\
+	opacity: 1;\r\n\
+}\r\n\
+/*end of text channel names*/\r\n\
 "
+
+
 
       var element = document.createElement('a');
       element.setAttribute('href', "data:text/plain;charset=utf-8," + encodeURIComponent(css));
