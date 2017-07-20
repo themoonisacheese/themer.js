@@ -1,6 +1,6 @@
 var fs = require('fs');
 const VersionMajor = 1;
-const VersionMinor = 3;
+const VersionMinor = 4;
 
 function prompt(question, callback) {
     var stdin = process.stdin,
@@ -34,7 +34,8 @@ prompt('Enter the theme name: ', function(input){
   css += "\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"" + VersionMajor + "." + VersionMinor"\"}*//\n\
 \n\
 {}\n\
-\n\
+
+@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css); /* thanks @GimoTheBeast <3*/\n\
 /* Backgrounds */\n"
 
   prompt('Copy-Paste the URL to your background image (must be a direct link): ', function(input){
