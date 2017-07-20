@@ -31,7 +31,7 @@ console.log("Themer.js v" + VersionMajor + "." + VersionMinor);
 prompt('Enter the theme name: ', function(input){
   name = input;
   css += input;
-  css += "\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//\n\
+  css += "\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"" + VersionMajor + "." + VersionMinor"\"}*//\n\
 \n\
 {}\n\
 \n\
