@@ -17,9 +17,7 @@
 
       var name = String(document.getElementById('name').value);;
       var bg = String(document.getElementById('BGurl').value);
-      if(bg.charAt(4)===':'){//the link needs to be https or discord won't load it
-        bg = 'https'.concat(bg.slice(4));
-      }
+      bg.replace("http:", "https:"); //link needs to be https or discord wont load it
 
 
 
