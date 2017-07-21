@@ -13,7 +13,7 @@
   <script>
     function submit(){
       const VersionMajor = '2';
-      const VersionMinor = '1';
+      const VersionMinor = '2';
 
       var name = String(document.getElementById('name').value);;
       var bg = String(document.getElementById('BGurl').value);
@@ -23,7 +23,7 @@
       var css = "//META{\"name\":\""+ name +"\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//\r\n\
 \r\n\
 {}\r\n\
-@import url(https://raw.githubusercontent.com/themoonisacheese/themer.js/master/themer.js.css);\r\n\
+@import url(https://gitcdn.xyz/repo/themoonisacheese/themer.js/master/themer.js.css);\r\n\
 /* Backgrounds */\r\n\
 .app,\r\n\
 .callout-backdrop {\r\n\
@@ -41,6 +41,9 @@
 	background: url(\""+bg+"\")!important;\r\n\
 	background-size: cover!important;\r\n\
 }\r\n\
+.theme-dark .chat{background: transparent;}\r\n\
+\r\n\
+.layers, .layer { background: transparent !important; }\r\n\
 "
 
 
