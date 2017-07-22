@@ -13,12 +13,13 @@
   <script>
     function submit(){
       const VersionMajor = '2';
-      const VersionMinor = '2';
+      const VersionMinor = '3';
 
       var name = String(document.getElementById('name').value);;
       var bg = String(document.getElementById('BGurl').value);
-      bg.replace("http:", "https:"); //link needs to be https or discord wont load it
-
+      if(bg.charAt(4)===':'){//the link needs to be https or discord won't load it
+              bg = 'https'.concat(bg.slice(4));
+      }
 
       var css = "//META{\"name\":\""+ name +"\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//\r\n\
 \r\n\
