@@ -12,8 +12,8 @@
 
   <script>
     function submit(){
-      const VersionMajor = '2';
-      const VersionMinor = '4';
+      const VersionMajor = '3';
+      const VersionMinor = '0';
 
       var name = String(document.getElementById('name').value);;
       var bg = String(document.getElementById('BGurl').value);
@@ -21,30 +21,16 @@
               bg = 'https'.concat(bg.slice(4));
       }
 
-      var css = "//META{\"name\":\""+ name +"\",\"description\":\"Generated automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//{}\r\n\
-\r\n\
-\r\n\
-@import url(https://gitcdn.xyz/repo/themoonisacheese/themer.js/master/themer.js.css);\r\n\
-/* Backgrounds */\r\n\
-.app,\r\n\
-.callout-backdrop {\r\n\
-	background-image: url(\""+bg+"\");\r\n\
-	background-size: cover !important;\r\n\
-	background-position: center !important;\r\n\
-}\r\n\
-\r\n\
-.bda-backdrop {\r\n\
-	background: url(\""+bg+"\");\r\n\
-	background-size: cover!important;\r\n\
-}\r\n\
-\r\n\
-#pubs-container:before {\r\n\
-	background: url(\""+bg+"\")!important;\r\n\
-	background-size: cover!important;\r\n\
-}\r\n\
-.theme-dark .chat{background: transparent;}\r\n\
-\r\n\
-.layers, .layer { background: transparent !important; }\r\n\
+      var css = "//META{\"name\":\"" + name + "\",\"description\":\"Generated Automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//{}\n\
+@import url(https://gitcdn.xyz/repo/themoonisacheese/themer.js/master/themer.js.css);\n\
+.app,\n\
+.callout-backdrop,\n\
+.bda-backdrop,\n\
+#pubs-container:before {\n\
+	background-image: url(\"" + bg +"\");\n\
+  background-size: cover !important;\n\
+	background-position: center !important;\n\
+}\n\
 "
 
 

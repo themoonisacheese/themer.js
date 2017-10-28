@@ -1,386 +1,48 @@
-/*This is the basis for the theme. everything is here except for the background image*/
-
-@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css); /* thanks @GimoTheBeast <3*/
 
 .layers,
 .layer,
-.search-header {
-	background: transparent !important;
-}
-
-.chat .new-messages-bar {
-	background-color: transparent !important;
-	opacity: 0.8;
-}
-
-.chat>.content .messages .message-group .markup pre {
-	background: transparent;
-	!important;
-	border-color: rgba(0, 0, 0, 0.46) !important;
-}
-
-.message-group .comment .markup code.inline {
-	background: transparent;
-}
-
-.message-group .comment .markup pre {
-	background: transparent;
-}
-
-.message-group .comment .markup pre code {
-	background: transparent;
-}
-
-.theme-dark .messages-wrapper .messages .message-group-blocked {
-	background: transparent;
-	border-color: transparent;
-}
-
-.ui-flex.flex-horizontal>.ui-flex:last-child {
-	background: transparent;
-}
-
-.search-popout .option.selected:after {
-	background: transparent !important;
-}
-
-
-/*THIS IS REALLY FUCKING IMPORTANT */
-
-.links,
+.guilds-wrapper,
+.scroller-wrap,
+.flex-3B1Tl4,
 .chat,
-.typing,
-.guild-channels,
-.private-channels,
-.divider-red span,
+.content,
 .messages-wrapper,
-#rtc-connection {
-	background: transparent !important;
-}
-
-.content {
-	background: rgba(0, 0, 0, 0.3) !important;
-}
-
-.container-RYiLUQ {
-	background: transparent !important;
-}
-
-.account {
-	background: rgba(0, 0, 0, 0);
-}
-
-#rtc-connection .btn {
-	background: transparent;
-}
-
-#rtc-connection .btn:active {
-	background: transparent;
-}
-
-#user-profile-modal .avatar-wrapper {
-	background-color: transparent;
-}
-
-#user-profile-modal .header:after {
-	background-color: transparent;
-	background-image: none;
-}
-
-.emoji-picker .sticky-header {
-	background: transparent;
-}
-
-.bda-dark .emoji-picker .header .search-bar {
-	background-color: transparent;
-}
-
-.instant-invite-modal {
-	background: transparent;
-}
-
-.add-friend-popout {
-	background: transparent;
-}
-
-.user-popout .avatar-wrapper .avatar-popout {
-	background-color: transparent;
-}
-
-.theme-dark.context-menu .item.danger {
-	background: transparent;
-}
-
-.context-menu .item.danger {
-	background-color: transparent;
-}
-
-.guild-settings-modal-members {
-	background-color: transparent;
-}
-
-.clipboard-input-inner {
-	background: transparent;
-}
-
-.create-guild-container {
-	background-color: transparent;
-}
-
-.theme-dark .ui-standard-sidebar-view .content-region .sidebar-region .sidebar-region-scroller {
-	background: transparent !important;
-}
-
-.form .control-group .Select-control {
-	background-color: transparent;
-}
-
-.user-settings-modal .settings-wrapper,
-.user-settings-modal .voice-settings.element {
-	background: transparent;
-}
-
-.user-settings-modal .voice-settings {
-	background: transparent !important;
-}
-
-.form .form-actions {
-	background: transparent;
-}
-
-#friends {
-	background: transparent !important;
-}
-
-.theme-dark .chat>.content .messages .divider:not(.red) div {
-	background: transparent;
-}
-
-.channel-notification-settings .content .content-inner {
-	background: transparent !important;
-}
-
-.theme-dark.context-menu .item.disabled {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.search-bar.search-bar-light {
-	background-color: rgba(0, 0, 0, 0);
-	box-shadow: none;
-}
-
-.region-select {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.user-popout .body .notes textarea:focus {
-	background: rgba(0, 0, 0, 0);
-}
-
-.bd-settings>div:last-child {
-	background: rgba(0, 0, 0, 0) !important;
-	height: 30px !important;
-	position: absolute !important;
-	bottom: 0px !important;
-	left: 0px !important;
-	right: 0 !important;
-}
-
-.guilds-wrapper {
-	box-shadow: inset -10px 0px 5px -6px rgba(0, 0, 0, 0.1);
-	background: rgba(0, 0, 0, 0.5);
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.account {
-	background: rgba(0, 0, 0, 0);
-}
-
-.channel-textarea-autocomplete-inner {
-	background: rgba(0, 0, 0, 0.6)!important;
-	border: none !important;
-}
-.channel-textarea-autocomplete ul li.active {
-    background:rgba(255,255,255,0.1)!important;
-}
-
-.channel.channel-textarea-autocomplete-inner:after {
-	display: none;
-}
-
-.channel-textarea-autocomplete-inner header {
-	background: rgba(0, 0, 0, 0.0)!important;
-	border: none !important;
-}
-
-.channels-wrap {
-	background: rgba(0, 0, 0, 0.3);
-	box-shadow: inset -10px 0px 20px -10px rgba(0, 0, 0, 0.2);
-}
-
-.theme-dark .channel-pins-wrap {
-	background-color: rgba(0, 0, 0, 0.79);
-	box-shadow: none;
-}
-
-.theme-dark .channel-pins-wrap .header {
-	box-shadow: none;
-}
-
-.settings-connections-wrapper .authed-app {
-	background: rgba(0, 0, 0, 0.6);
-}
-
-.guilds-wrapper .guilds .friends-online {
-	font-size: 10px;
-	color: hsla(0, 0%, 100%, 0.82);
-	width: 51px;
-}
-
-.theme-dark .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.chat>.content .messages .message-group h2 .user-name {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.create-guild-container .create-or-join .actions .or {
-	display: none;
-}
-
-.create-guild-container {
-	background-color: transparent;
-}
-
-.channel-members, .channel-members-wrap>div{
-	background: rgba(0, 0, 0, 0.1) !important;
-}
-
-
-/* Scroller Settings */
-
-.scroller-wrap .scroller {
-	overflow-y: auto !important;
-}
-
-.scroller-wrap .scroller::-webkit-scrollbar-thumb,
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-	border: 3px solid rgba(49, 49, 49, 0) !important;
-}
-
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-	border: 3px solid rgba(255, 255, 255, 0) !important;
-	background-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.is-open.is-focused .Select-menu::-webkit-scrollbar,
-.is-open.is-focused .Select-menu::-webkit-scrollbar-track-piece {
-	background: rgba(0, 0, 0, 0.3);
-	width: 8px;
-}
-
-.is-open.is-focused .Select-menu::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-}
-
-.CodeMirror> ::-webkit-scrollbar-thumb {
-	border-radius: 6px;
-}
-
-.CodeMirror> ::-webkit-scrollbar-track-piece {
-	border-radius: 6px;
-}
-
-.CodeMirror-hscrollbar::-webkit-scrollbar-thumb,
-.CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {
-	border: 3px solid rgba(49 49 49, 0) !important;
-	border-radius: 6px;
-}
-
-.CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {
-	border: 3px solid rgba(255, 255, 255, 0) !important;
-	background-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.user-popout .body .roles .member-roles::-webkit-scrollbar,
-.user-popout .body .roles .member-roles::-webkit-scrollbar-track,
-.user-popout .body .roles .member-roles::-webkit-scrollbar-track-piece {
-	background-color: rgba(15, 17, 19, 0.6) !important;
-	border-color: rgba(15, 17, 19, 0.6) !important;
-	width: 8px;
-}
-
-.user-popout .body .roles .member-roles::-webkit-scrollbar-thumb {
-	border-radius: 6px;
-}
-
-
-/* Custome CSS */
-
-.bda-slist li:nth-child(odd) {
-	background: rgba(0, 0, 0, 0.32);
-}
-
-.bda-slist li {
-	background: rgba(0, 0, 0, 0.32);
-}
-
-.bda-slist .bda-description {
-	color: #000000;
-}
-
-.bda-slist .checkbox:before {
-	content: "Enable";
-	color: #000000;
-}
-
-
-/* Friends */
-
-#friends {
-	background: transparent !important;
-}
-
-.friends-header {
-	background: rgba(0, 0, 0, 0.3) !important;
-}
-
-.friends-table {
-	background: rgba(0, 0, 0, 0.3) !important;
-	margin-top: 0 !important;
-	box-shadow: inset 5px 5px 2px -3px rgba(0, 0, 0, 0.5);
-}
-
-.friends-table .friends-table-body {
-	padding-top: 20px !important;
-}
-
-.friends-table .friends-row:hover {
-	background: rgba(0, 0, 0, 0.35) !important;
-}
-
-.private-channels .search-bar {
-	background: rgba(10, 13, 16, 0) !important;
-}
-
-.ui-video-background-transition {
-	opacity: 0 !important;
-}
-
-.call {
-	background: transparent !important;
-}
-
-.title-wrap-dark {
-	background: rgba(0, 0, 0, 0.2) !important;
-}
-
-.channel-members .member:hover {
-    background: rgba(255, 255, 255, 0.07) !important;
-}
-
-/* Date 1px line */
+.channel-members-wrap,
+.scrollerWrap-2uBjct,
+.channel-members,
+.content-2mSKOj,
+#friends,
+.friends-table,
+.private:hover,
+.friend{
+  background: transparent !important;
+}
+
+
+.channels-3g2vYe,
+.titleWrapper-3Vi_wz,
+.wrapperSelectedText-31jJa8,
+.search-header,
+.friends-row:hover,
+.private a:hover,
+.tab-bar-item:hover,
+.themed-popout{
+  background-color: rgba(0,0,0,0.3) !important;
+  box-shadow: 1px 1px 10px black;
+}
+
+.flexChild-1KGW5q,
+.container-iksrDt,
+form,
+.member:hover{
+  background: transparent !important;
+  background-color: rgba(0,0,0,0.4) !important;
+}
+.chat{
+  background-color:  rgba(0,0,0,0.2) !important;
+}
+
+/*divider*/
 
 .chat .divider>span {
 	background: rgba(255, 255, 255, 0.1) !important;
@@ -406,22 +68,59 @@
 .chat .divider>div {
 	display: none;
 }
-.search-bar-inner{
-	background: rgba(0, 0, 0, 0.5) !important;
+
+/*SCROLLER*/
+.scroller-wrap .scroller {
+	overflow-y: auto !important;
 }
 
-/*text channels names*/
-.nameDefaultText-QoumjC{
-	color: #C0C0C0;
-	opacity: 1;
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border: 3px solid rgba(49, 49, 49, 0) !important;
 }
-.nameMutedText-1YDcP-{
-	color: #707070;
-	opacity: 1;
-}
-/*end of text channel names*/
 
-/* Settings */
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border: 3px solid rgba(255, 255, 255, 0) !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.is-open.is-focused .Select-menu::-webkit-scrollbar,
+.is-open.is-focused .Select-menu::-webkit-scrollbar-track-piece {
+	background: rgba(0, 0, 0, 0.3);
+	width: 8px;
+}
+
+.is-open.is-focused .Select-menu::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+}
+
+.CodeMirror> ::-webkit-scrollbar-thumb,
+.CodeMirror> ::-webkit-scrollbar-track-piece
+.user-popout .body .roles .member-roles::-webkit-scrollbar-thumb  {
+	border-radius: 6px;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb,
+.CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {
+	border: 3px solid rgba(49 49 49, 0) !important;
+	border-radius: 6px;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-track-piece {
+	border: 3px solid rgba(255, 255, 255, 0) !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.user-popout .body .roles .member-roles::-webkit-scrollbar,
+.user-popout .body .roles .member-roles::-webkit-scrollbar-track,
+.user-popout .body .roles .member-roles::-webkit-scrollbar-track-piece {
+	background-color: rgba(15, 17, 19, 0.6) !important;
+	border-color: rgba(15, 17, 19, 0.6) !important;
+	width: 8px;
+}
+
+/*END SCROLLER*/
+/*settings page*/
 .theme-dark .ui-standard-sidebar-view .sidebar-region {
     background: rgba(0, 0, 0, 0.42);
 }
@@ -436,14 +135,13 @@
 .theme-dark .ui-standard-sidebar-view .content-region {
     background: transparent;
 }
-
-/*end of settings*/
-
+/*end settings page*/
 /*search popout*/
 
 .theme-dark .search-results-wrap {
-    background-color: transparent;
+    background-color: transparent !important;
 }
+
 .theme-dark .search-results-wrap .channel-separator .channel-name {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -477,4 +175,10 @@
 
 .ui-hover-card::before{
 	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+/* fix flickering */
+html, span:not(.spinner-item) {
+    backface-visibility: hidden;
 }
