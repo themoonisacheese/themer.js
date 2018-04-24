@@ -12,7 +12,7 @@
 
   <script>
     function submit(){
-      const VersionMajor = '3';
+      const VersionMajor = '4';
       const VersionMinor = '0';
 
       var name = String(document.getElementById('name').value);;
@@ -21,16 +21,18 @@
               bg = 'https'.concat(bg.slice(4));
       }
 
-      var css = "//META{\"name\":\"" + name + "\",\"description\":\"Generated Automatically using Themer.js\",\"author\":\"Themoonisacheese\",\"version\":\"1.0\"}*//{}\n\
-@import url(https://gitcdn.xyz/repo/themoonisacheese/themer.js/master/themer.js.css);\n\
-.app,\n\
-.callout-backdrop,\n\
-.bda-backdrop,\n\
-#pubs-container:before {\n\
-	background-image: url(\"" + bg +"\");\n\
-  background-size: cover !important;\n\
-	background-position: center !important;\n\
-}\n\
+      var css = "//META{\"name\":\"" + name + "\",\"description\":\"Generated Automatically using Themer.js. Theme base made by DevilBro\",\"author\":\"Themoonisacheese, DevilBro\",\"version\":\"1.0\"}*//{}\n\
+      @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);\n\
+      \n\
+      :root {\n\
+      	--transparencycolor: 0,0,0;		/* default: 0,0,0 */\n\
+      	--transparencyalpha: 0.15;		/* default: 0.15 */\n\
+      	--messagetransparency: 0.5;		/* default: 0.5 */\n\
+      	--memberlistransparency: 0;		/* default: 0 (additional darkness for member list can be changed in case a bright background makes the list hard to read)*/\n\
+      	--accentcolor: 190,78,180; 		/* default: 190,78,180 discord: 114,137,218 bd-blue: 58,113,193*/\n\
+      	--background: url(" + bg + "); /* replace the link in url() with your own direct image link to change the background */\n\
+      	--backdrop: rgba(0,0,0,0.4);	/* default: rgba(0,0,0,0.4) can also be changed to an image like --background */\n\
+      }\n\
 "
 
 
